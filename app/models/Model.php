@@ -14,12 +14,9 @@ abstract class Model {
 
     private function connect() {
 
-        $type = 'mysql';
-        $port = '8889';
-        $charset = 'utf8mb4';
 
 //      some of these are optional
-        $dsn = "$type:hostname=" . DBHOST .";dbname=" . DBNAME . ";port=$port;charset=$charset";
+        $dsn = "mysql:host=" . DBHOST . ";port=" . DBPORT . ";dbname=" . DBNAME;
 
         $options = [
             //we can set the error mode, to throw exceptions or PDO type errors

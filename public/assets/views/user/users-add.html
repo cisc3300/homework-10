@@ -12,7 +12,7 @@
     <body>
 
         <div class="container users-form margin-thirty">
-            <a href="http://localhost:8888/" class="link">Home</a>
+            <a href="/" class="link">Home</a>
             <h2 class="margin-thirty">Add User</h2>
             <form id="form-id">
                 <div class="form-group margin-twenty">
@@ -46,7 +46,7 @@
                         lastName,
                     }
                     $.ajax({
-                        url: `http://localhost:8888/api/users`,
+                        url: `/api/users`,
                         type: "POST",
                         data: data,
                         dataType: "json",
